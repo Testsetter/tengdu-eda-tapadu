@@ -1,1 +1,0 @@
-# tengdu-eda-tapadu
