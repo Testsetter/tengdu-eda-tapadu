@@ -77,7 +77,7 @@
         }
 
         function selectWord(element) {
-            if (gameOver) return;
+            if (gameOver || element.style.backgroundColor !== "lightgray") return; // Prevents clicking solved words
             
             if (selectedWords.includes(element.textContent)) {
                 element.classList.remove("selected");
