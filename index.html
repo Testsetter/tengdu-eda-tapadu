@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        .word {
+            padding: 10px;
+            background-color: lightgray;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .selected {
+            background-color: yellow;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Connections Game</h2>
+    <p>Select 4 words that are connected. You have 8 tries!</p>
+    <div class="grid" id="wordGrid"></div>
+    <p id="message"></p>
+    <button onclick="resetGame()">Reset Game</button>
+
+    <script>
+        let words = [
+            "Apple", "Banana", "Orange", "Grape", // Group 1: Fruits
+            "Dog", "Cat", "Horse", "Rabbit", // Group 2: Animals
+            "Red", "Blue", "Green", "Yellow", // Group 3: Colors
+            "Car", "Bus", "Bike", "Train" // Group 4: Vehicles
+        ];
+        let originalGroups = [
+            ["Apple", "Banana", "Orange", "Grape"],
+            ["Dog", "Cat", "Horse", "Rabbit"],
+            ["Red", "Blue", "Green", "Yellow"],
+            ["Car", "Bus", "Bike", "Train"]
+        ];
+        let groups = JSON.parse(JSON.stringify(originalGroups));
+        let selectedWords = [];
+        let attempts = 8;
+        let gameOver = false;
+
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        function createGrid() {
+            const grid = document.getElementById("wordGrid");
+            grid.innerHTML = "";
+            shuffle(words).forEach(word => {
+                let div = document.createElement("div");
+                div.className = "word";
+                div.textContent = word;
+                div.onclick = () => selectWord(div);
+                grid.appendChild(div);
+            });
+        }
+
+        function selectWord(element) {
+            if (gameOver) return; // Prevent selection after game over
+            
+            if (selectedWords.includes(element.textContent)) {
+                element.classList.remove("selected");
+                selectedWords = selectedWords.filter(w => w !== element.textContent);
+            } else if (selectedWords.length < 4) {
+                element.classList.add("selected");
+                selectedWords.push(element.textContent);
+            }
+            if (selectedWords.length === 4) {
+                checkSelection();
+            }
+        }
+
+        function checkSelection() {
+            let foundGroup = groups.find(group => 
+                group.every(word => selectedWords.includes(word))
+            );
+            if (foundGroup) {
+                document.getElementById("message").textContent = "Correct!";
+                document.querySelectorAll(".selected").forEach(el => {
+                    el.style.backgroundColor = "lightgreen";
+                    el.onclick = null;
+                });
+                groups = groups.filter(group => group !== foundGroup);
+            } else {
+                document.getElementById("message").textContent = "Try again!";
+                attempts--;
+                if (attempts === 0) {
+                    document.getElementById("message").textContent = "Game over!";
+                    gameOver = true;
+                }
+            }
+            selectedWords = [];
+            document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
+        }
+
+        function resetGame() {
+            attempts = 8;
+            selectedWords = [];
+            gameOver = false;
+            groups = JSON.parse(JSON.stringify(originalGroups));
+            document.getElementById("message").textContent = "";
+            createGrid();
+        }
+
+        createGrid();
+    </script>
+</body>
+</html>
