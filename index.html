@@ -40,10 +40,10 @@
 
     <script>
         let words = [
-            "Apple", "Banana", "Orange", "Grape", // Group 1: Fruits
-            "Dog", "Cat", "Horse", "Rabbit", // Group 2: Animals
-            "Red", "Blue", "Green", "Yellow", // Group 3: Colors
-            "Car", "Bus", "Bike", "Train" // Group 4: Vehicles
+            "Apple", "Banana", "Orange", "Grape", // Fruits
+            "Dog", "Cat", "Horse", "Rabbit", // Animals
+            "Red", "Blue", "Green", "Yellow", // Colors
+            "Car", "Bus", "Bike", "Train" // Vehicles
         ];
         
         let originalGroups = [
@@ -77,7 +77,7 @@
         }
 
         function selectWord(element) {
-            if (gameOver || element.style.backgroundColor !== "lightgray") return; // Prevent selecting solved words
+            if (gameOver || element.classList.contains("solved")) return; // Prevent selecting solved words
             
             if (selectedWords.includes(element.textContent)) {
                 element.classList.remove("selected");
@@ -100,11 +100,17 @@
             if (foundGroup) {
                 document.getElementById("message").textContent = "Correct!";
                 document.querySelectorAll(".selected").forEach(el => {
-                    el.style.backgroundColor = colors[correctGuesses] || "lightgray"; // Cycle colors
-                    el.onclick = null; // Disable clicking on solved words
+                    el.style.backgroundColor = colors[correctGuesses] || "lightgray"; // Change color
+                    el.classList.add("solved"); // Mark as solved
+                    el.onclick = null; // Disable further clicking on solved words
                 });
                 correctGuesses++;
                 groups = groups.filter(group => group !== foundGroup);
+                
+                if (groups.length === 0) {
+                    document.getElementById("message").textContent = "You won!";
+                    gameOver = true;
+                }
             } else {
                 document.getElementById("message").textContent = "Try again!";
                 attempts--;
