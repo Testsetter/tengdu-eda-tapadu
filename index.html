@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>
-    <h2>Connections Game</h2>
+    <h2>Tengdu 4 x 4</h2>
     <p>Select 4 words that are connected. You have 8 tries!</p>
     <div class="grid" id="wordGrid"></div>
     <p id="message"></p>
@@ -91,14 +91,18 @@
             let foundGroup = groups.find(group => 
                 group.every(word => selectedWords.includes(word))
             );
-            if (foundGroup) {
-                document.getElementById("message").textContent = "Correct!";
-                document.querySelectorAll(".selected").forEach(el => {
-                    el.style.backgroundColor = "lightgreen";
-                    el.onclick = null;
-                });
-                groups = groups.filter(group => group !== foundGroup);
-            } else {
+            let colors = ["lightgreen", "lightblue", "lightpink", "lightgray"];
+let correctGuesses = 0;
+
+if (foundGroup) {
+    document.getElementById("message").textContent = "Correct!";
+    document.querySelectorAll(".selected").forEach(el => {
+        el.style.backgroundColor = colors[correctGuesses] || "lightgray"; // Default to gray if more than 4 groups
+        el.onclick = null;
+    });
+    correctGuesses++;
+    groups = groups.filter(group => group !== foundGroup);
+} else {
                 document.getElementById("message").textContent = "Try again!";
                 attempts--;
                 if (attempts === 0) {
