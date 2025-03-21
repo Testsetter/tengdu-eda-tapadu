@@ -104,9 +104,11 @@
                     el.classList.add("solved"); // Mark as solved
                     el.onclick = null; // Disable further clicking on solved words
                 });
+
                 correctGuesses++;
                 groups = groups.filter(group => group !== foundGroup);
-                
+                selectedWords = []; // FIX: Clear selections after a correct guess
+
                 if (groups.length === 0) {
                     document.getElementById("message").textContent = "You won!";
                     gameOver = true;
@@ -119,7 +121,7 @@
                     gameOver = true;
                 }
             }
-            selectedWords = [];
+            
             document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
         }
 
