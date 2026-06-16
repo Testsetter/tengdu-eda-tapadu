@@ -4,19 +4,19 @@
     "groups": [
       {
         "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
-        "words": ["Frakki", "Spítali", "Loki", "Kári"]
+        "words": ["FRAKKI", "SPÍTALI", "LOKI", "KÁRI"]
       },
       {
         "category": "Hafnarstræti, Pósthússtræti, Kirkjustræti, Skólastræti",
-        "words": ["Höfn", "Pósthús", "Kirkja", "Skóli"]
+        "words": ["HÖFN", "PÓSTHÚS", "KIRKJA", "SKÓLI"]
       },
       {
         "category": "Bækur eftir Arnald Indriðason",
-        "words": ["Einvígi", "Rödd", "Mýri", "Ferðalok"]
+        "words": ["EINVÍGI", "RÖDD", "MÝRI", "FERÐALOK"]
       },
       {
         "category": "Orðin mynda bókartitla með orðinu FÓLK: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
-        "words": ["Kjallari", "Fátækur", "Sjálfstæður", "Blokk"]
+        "words": ["KJALLARI", "FÁTÆKUR", "SJÁLFSTÆÐUR", "BLOKK"]
       }
     ]
   },
@@ -25,19 +25,19 @@
     "groups": [
       {
         "category": "Samheiti fyrir glugga.",
-        "words": ["Skjár", "Gluggi", "Ljóri", "Vindauga"]
+        "words": ["SKJÁR", "GLUGGI", "LJÓRI", "VINDAUGA"]
       },
       {
         "category": "Tískubóla, Unglingabóla, Hlaupabóla, Stóra bóla",
-        "words": ["Tíska", "Unglingur", "Hlaup", "Stór"]
+        "words": ["TÍSKA", "UNLINGUR", "HLAUP", "STÓR"]
       },
       {
         "category": "Ný dönsk: Horfðu til himins, með höfuðið hátt.",
-        "words": ["Horfa", "Himinn", "Höfuð", "Hár"]
+        "words": ["HORFA", "HIMINN", "HÖFUÐ", "HÁR"]
       },
       {
         "category": "Íslenskt sælgæti.",
-        "words": ["Hraun", "Draumur", "Trítill", "Djúpur"]
+        "words": ["HRAUN", "DRAUMUR", "TRÍTILL", "DJÚPUR"]
       }
     ]
   },
@@ -46,19 +46,19 @@
     "groups": [
       {
         "category": "Njálsgata, Bergþórugata, Njarðargata, Tjarnargata",
-        "words": ["Njáll", "Bergþóra", "Njörður", "Tjörn"]
+        "words": ["NJÁLL", "BERGÞÓRA", "NJÖRÐUR", "TJÖRN"]
       },
       {
-        "category": "Titlar á íslenskum kvikmyndum",
-        "words": ["Brim", "Skjálfti", "Börn", "Eldur"]
+        "category": "Titlar á íslenskum kvikmyndum, ELDUR stendur fyrir myndina Eldarnir.",
+        "words": ["BRIM", "SKJÁLFTI", "BÖRN", "ELDUR"]
       },
       {
         "category": "Sælgætisgerðir.",
-        "words": ["Móna", "Linda", "Freyja", "Nói"]
+        "words": ["MÓNA", "LINDA", "FREYJA", "NÓI"]
       },
       {
         "category": "Úúú, rosa flott! Þórskaffi, Kaffi Sólon, Kaffitár, Múlakaffi.",
-        "words": ["Þór", "Sólon", "Tár", "Múli"]
+        "words": ["ÞÓR", "SÓLON", "TÁR", "MÚLI"]
       }
     ]
   }
