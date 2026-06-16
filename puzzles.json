@@ -1,1 +1,20 @@
-
+[
+  {
+    "name": "Þraut 1",
+    "groups": [
+      ["Apple", "Banana", "Orange", "Grape"],
+      ["Dog", "Cat", "Horse", "Rabbit"],
+      ["Red", "Blue", "Green", "Yellow"],
+      ["Car", "Bus", "Bike", "Train"]
+    ]
+  },
+  {
+    "name": "Þraut 2",
+    "groups": [
+      ["Reykjavík", "Akureyri", "Kópavogur", "Hafnarfjörður"],
+      ["Kók", "Pepsi", "Sprite", "Fanta"],
+      ["Mánudagur", "Þriðjudagur", "Miðvikudagur", "Fimmtudagur"],
+      ["Hundur", "Köttur", "Hestur", "Kýr"]
+    ]
+  }
+]
