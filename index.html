@@ -116,6 +116,7 @@
             } else {
                 document.getElementById("message").textContent = "Try again!";
                 attempts--;
+                selectedWords = [];
                 if (attempts === 0) {
                     document.getElementById("message").textContent = "Game over!";
                     gameOver = true;
