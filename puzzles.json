@@ -2,19 +2,22 @@
   {
     "name": "Puzzle 1",
     "groups": [
-      ["Apple", "Banana", "Orange", "Grape"],
-      ["Dog", "Cat", "Horse", "Rabbit"],
-      ["Red", "Blue", "Green", "Yellow"],
-      ["Car", "Bus", "Bike", "Train"]
-    ]
-  },
-  {
-    "name": "Puzzle 2",
-    "groups": [
-      ["Reykjavík", "Akureyri", "Kópavogur", "Hafnarfjörður"],
-      ["Kók", "Pepsi", "Sprite", "Fanta"],
-      ["Mánudagur", "Þriðjudagur", "Miðvikudagur", "Fimmtudagur"],
-      ["Hundur", "Köttur", "Hestur", "Kýr"]
+      {
+        "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
+        "words": ["Frakki", "Spítali", "Loki", "Kári"]
+      },
+      {
+        "category": "Hafnarstræti, Pósthússtræti, Kirkjustræti, Skólastræti",
+        "words": ["Höfn", "Pósthús", "Kirkja", "Skóli"]
+      },
+      {
+        "category": "Bækur eftir Arnald Indriðason",
+        "words": ["Einvígi", "Rödd", "Mýri", "Ferðalok"]
+      },
+      {
+        "category": "Orðið + fólk = bókartitlar: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum",
+        "words": ["Kjallari", "Fátækur", "Sjálfstæður", "Blokk"]
+      }
     ]
   }
 ]
