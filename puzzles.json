@@ -15,7 +15,7 @@
         "words": ["Einvígi", "Rödd", "Mýri", "Ferðalok"]
       },
       {
-        "category": "Orðin mynda bókartitla með orðinu "fólk": Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
+        "category": "Orðin mynda bókartitla með orðinu FÓLK: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
         "words": ["Kjallari", "Fátækur", "Sjálfstæður", "Blokk"]
       }
     ]
@@ -24,7 +24,7 @@
     "name": "Puzzle 2",
     "groups": [
       {
-        "category": "Orðin þýða öll "gluggi".",
+        "category": "Samheiti fyrir glugga.",
         "words": ["Skjár", "Gluggi", "Ljóri", "Vindauga"]
       },
       {
