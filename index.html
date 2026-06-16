@@ -49,7 +49,7 @@
     let attempts = 8;
     let gameOver = false;
     let correctGuesses = 0;
-    let colors = ["lightgreen", "lightblue", "lightpink", "lightgray"];
+    let colors = ["lightgreen", "lightblue", "lightpink", "orange"];
 
     fetch("puzzles.json")
     .then(response => {
@@ -137,7 +137,7 @@
             selectedWords = [];
 
             if (groups.length === 0) {
-                document.getElementById("message").textContent = "You won!";
+                document.getElementById("message").textContent = "Sko þig! Category: " + foundGroup.category + " — Taka einn enn?";
                 gameOver = true;
             }
 
