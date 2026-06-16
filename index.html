@@ -52,11 +52,20 @@
     let colors = ["lightgreen", "lightblue", "lightpink", "lightgray"];
 
     fetch("puzzles.json")
-        .then(response => response.json())
-        .then(data => {
-            puzzles = data;
-            loadPuzzle(0);
-        });
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Could not load puzzles.json");
+        }
+        return response.json();
+    })
+    .then(data => {
+        puzzles = data;
+        loadPuzzle(0);
+    })
+    .catch(error => {
+        document.getElementById("message").textContent = error.message;
+        console.error(error);
+    });
 
     function loadPuzzle(index) {
         currentPuzzleIndex = index;
