@@ -1,6 +1,6 @@
 [
   {
-    "name": "Þraut 1",
+    "name": "Puzzle 1",
     "groups": [
       ["Apple", "Banana", "Orange", "Grape"],
       ["Dog", "Cat", "Horse", "Rabbit"],
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "name": "Þraut 2",
+    "name": "Puzzle 2",
     "groups": [
       ["Reykjavík", "Akureyri", "Kópavogur", "Hafnarfjörður"],
       ["Kók", "Pepsi", "Sprite", "Fanta"],
@@ -17,4 +17,4 @@
       ["Hundur", "Köttur", "Hestur", "Kýr"]
     ]
   }
-]
+]]
