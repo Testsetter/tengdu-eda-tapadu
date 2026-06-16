@@ -59,6 +59,25 @@
       {
         "category": "Úúú, rosa flott! Þórskaffi, Kaffi Sólon, Kaffitár, Múlakaffi.",
         "words": ["ÞÓR", "SÓLON", "TÁR", "MÚLI"]
+      },
+  {
+    "name": "Gáta 4",
+    "groups": [
+      {
+        "category": "Stjórnmálaflokkar: Besti flokkurinn, Bændaflokkurinn, Alþýðuflokkurinn, Borgaraflokkurinn",
+        "words": ["BESTUR", "BÓNDI", "ALÞÝÐA", "BORGARI"]
+      },
+      {
+        "category": "Útvegsbankinn, Iðnaðarbankinn, Búnaðarbankinn, Íslandsbanki",
+        "words": ["ÚTVEGUR", "IÐNAÐUR", "BÚNAÐUR", "ÍSLAND"]
+      },
+      {
+        "category": "Nýir vendir sópa best.",
+        "words": ["NÝR", "VÖNDUR", "SÓPAR", "BESTUR"]
+      },
+      {
+        "category": "4 árstíðir, 4 höfuðskepnur, 4 áttir, 4 litir í spilastokk.",
+        "words": ["ÁÁRSTÍÐ", "ÁTT", "HÖFUÐSKEPNA", "SPILASTOKKUR"]
       }
     ]
   }
