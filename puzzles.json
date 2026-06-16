@@ -1,6 +1,6 @@
 [
   {
-    "name": "Puzzle 1",
+    "name": "Gáta 1",
     "groups": [
       {
         "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "name": "Puzzle 2",
+    "name": "Gáta 2",
     "groups": [
       {
         "category": "Samheiti fyrir glugga.",
@@ -38,6 +38,27 @@
       {
         "category": "Íslenskt sælgæti.",
         "words": ["Hraun", "Draumur", "Trítill", "Djúpur"]
+      }
+    ]
+  },
+  {
+    "name": "Gáta 3",
+    "groups": [
+      {
+        "category": "Njálsgata, Bergþórugata, Njarðargata, Tjarnargata",
+        "words": ["Njáll", "Bergþóra", "Njörður", "Tjörn"]
+      },
+      {
+        "category": "Titlar á íslenskum kvikmyndum",
+        "words": ["Brim", "Skjálfti", "Börn", "Eldur"]
+      },
+      {
+        "category": "Sælgætisgerðir.",
+        "words": ["Móna", "Linda", "Freyja", "Nói"]
+      },
+      {
+        "category": "Úúú, rosa flott! Þórskaffi, Kaffi Sólon, Kaffitár, Múlakaffi.",
+        "words": ["Þór", "Sólon", "Tár", "Múli"]
       }
     ]
   }
