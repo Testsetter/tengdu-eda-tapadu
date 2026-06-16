@@ -15,7 +15,7 @@
         "words": ["Einvígi", "Rödd", "Mýri", "Ferðalok"]
       },
       {
-        "category": "Orðið + fólk = bókartitlar: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum",
+        "category": "Orðin mynda bókartitla með orðinu "fólk": Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
         "words": ["Kjallari", "Fátækur", "Sjálfstæður", "Blokk"]
       }
     ]
@@ -24,7 +24,7 @@
     "name": "Puzzle 2",
     "groups": [
       {
-        "category": "Fjögur orð yfir sama fyribærið",
+        "category": "Orðin þýða öll "gluggi".",
         "words": ["Skjár", "Gluggi", "Ljóri", "Vindauga"]
       },
       {
@@ -32,11 +32,11 @@
         "words": ["Tíska", "Unglingur", "Hlaup", "Stór"]
       },
       {
-        "category": "Horfðu til himins, með höfuðið hátt",
+        "category": "Ný dönsk: Horfðu til himins, með höfuðið hátt.",
         "words": ["Horfa", "Himinn", "Höfuð", "Hár"]
       },
       {
-        "category": "Íslenskt sælgætisnammigott",
+        "category": "Íslenskt sælgæti.",
         "words": ["Hraun", "Draumur", "Trítill", "Djúpur"]
       }
     ]
