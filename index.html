@@ -71,7 +71,7 @@
         currentPuzzleIndex = index;
         originalGroups = puzzles[index].groups;
         groups = JSON.parse(JSON.stringify(originalGroups));
-        words = originalGroups.flat();
+        words = originalGroups.flatMap(group => group.words);;
 
         selectedWords = [];
         attempts = 8;
@@ -118,11 +118,12 @@
 
     function checkSelection() {
         let foundGroup = groups.find(group =>
-            group.every(word => selectedWords.includes(word))
+        group.words.every(word => selectedWords.includes(word))
         );
 
         if (foundGroup) {
-            document.getElementById("message").textContent = "Correct!";
+            document.getElementById("message").textContent =
+            "Rétt! " + foundGroup.category;
 
             document.querySelectorAll(".selected").forEach(el => {
                 el.style.backgroundColor = colors[correctGuesses] || "lightgray";
