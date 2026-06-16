@@ -37,106 +37,131 @@
     <div class="grid" id="wordGrid"></div>
     <p id="message"></p>
     <button onclick="resetGame()">Reset Game</button>
+    <button onclick="nextPuzzle()">Next Puzzle</button>
 
     <script>
-        let words = [
-            "Apple", "Banana", "Orange", "Grape", // Fruits
-            "Dog", "Cat", "Horse", "Rabbit", // Animals
-            "Red", "Blue", "Green", "Yellow", // Colors
-            "Car", "Bus", "Bike", "Train" // Vehicles
-        ];
-        
-        let originalGroups = [
-            ["Apple", "Banana", "Orange", "Grape"],
-            ["Dog", "Cat", "Horse", "Rabbit"],
-            ["Red", "Blue", "Green", "Yellow"],
-            ["Car", "Bus", "Bike", "Train"]
-        ];
-        
-        let groups = JSON.parse(JSON.stringify(originalGroups));
-        let selectedWords = [];
-        let attempts = 8;
-        let gameOver = false;
-        let correctGuesses = 0;
-        let colors = ["lightgreen", "lightblue", "lightpink", "lightgray"];
+        let puzzles = [];
+    let currentPuzzleIndex = 0;
+    let words = [];
+    let originalGroups = [];
+    let groups = [];
+    let selectedWords = [];
+    let attempts = 8;
+    let gameOver = false;
+    let correctGuesses = 0;
+    let colors = ["lightgreen", "lightblue", "lightpink", "lightgray"];
 
-        function shuffle(array) {
-            return array.sort(() => Math.random() - 0.5);
-        }
+    fetch("puzzles.json")
+        .then(response => response.json())
+        .then(data => {
+            puzzles = data;
+            loadPuzzle(0);
+        });
 
-        function createGrid() {
-            const grid = document.getElementById("wordGrid");
-            grid.innerHTML = "";
-            shuffle(words).forEach(word => {
-                let div = document.createElement("div");
-                div.className = "word";
-                div.textContent = word;
-                div.onclick = () => selectWord(div);
-                grid.appendChild(div);
-            });
-        }
+    function loadPuzzle(index) {
+        currentPuzzleIndex = index;
+        originalGroups = puzzles[index].groups;
+        groups = JSON.parse(JSON.stringify(originalGroups));
+        words = originalGroups.flat();
 
-        function selectWord(element) {
-            if (gameOver || element.classList.contains("solved")) return; // Prevent selecting solved words
-            
-            if (selectedWords.includes(element.textContent)) {
-                element.classList.remove("selected");
-                selectedWords = selectedWords.filter(w => w !== element.textContent);
-            } else if (selectedWords.length < 4) {
-                element.classList.add("selected");
-                selectedWords.push(element.textContent);
-            }
+        selectedWords = [];
+        attempts = 8;
+        gameOver = false;
+        correctGuesses = 0;
 
-            if (selectedWords.length === 4) {
-                checkSelection();
-            }
-        }
-
-        function checkSelection() {
-            let foundGroup = groups.find(group => 
-                group.every(word => selectedWords.includes(word))
-            );
-
-            if (foundGroup) {
-                document.getElementById("message").textContent = "Correct!";
-                document.querySelectorAll(".selected").forEach(el => {
-                    el.style.backgroundColor = colors[correctGuesses] || "lightgray"; // Change color
-                    el.classList.add("solved"); // Mark as solved
-                    el.onclick = null; // Disable further clicking on solved words
-                });
-
-                correctGuesses++;
-                groups = groups.filter(group => group !== foundGroup);
-                selectedWords = []; // FIX: Clear selections after a correct guess
-
-                if (groups.length === 0) {
-                    document.getElementById("message").textContent = "You won!";
-                    gameOver = true;
-                }
-            } else {
-                document.getElementById("message").textContent = "Try again!";
-                attempts--;
-                selectedWords = [];
-                if (attempts === 0) {
-                    document.getElementById("message").textContent = "Game over!";
-                    gameOver = true;
-                }
-            }
-            
-            document.querySelectorAll(".selected").forEach(el => el.classList.remove("selected"));
-        }
-
-        function resetGame() {
-            attempts = 8;
-            selectedWords = [];
-            gameOver = false;
-            correctGuesses = 0;
-            groups = JSON.parse(JSON.stringify(originalGroups));
-            document.getElementById("message").textContent = "";
-            createGrid();
-        }
-
+        document.querySelector("h2").textContent = puzzles[index].name;
+        document.getElementById("message").textContent = "";
         createGrid();
+    }
+
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    function createGrid() {
+        const grid = document.getElementById("wordGrid");
+        grid.innerHTML = "";
+
+        shuffle([...words]).forEach(word => {
+            let div = document.createElement("div");
+            div.className = "word";
+            div.textContent = word;
+            div.onclick = () => selectWord(div);
+            grid.appendChild(div);
+        });
+    }
+
+    function selectWord(element) {
+        if (gameOver || element.classList.contains("solved")) return;
+
+        if (selectedWords.includes(element.textContent)) {
+            element.classList.remove("selected");
+            selectedWords = selectedWords.filter(w => w !== element.textContent);
+        } else if (selectedWords.length < 4) {
+            element.classList.add("selected");
+            selectedWords.push(element.textContent);
+        }
+
+        if (selectedWords.length === 4) {
+            checkSelection();
+        }
+    }
+
+    function checkSelection() {
+        let foundGroup = groups.find(group =>
+            group.every(word => selectedWords.includes(word))
+        );
+
+        if (foundGroup) {
+            document.getElementById("message").textContent = "Correct!";
+
+            document.querySelectorAll(".selected").forEach(el => {
+                el.style.backgroundColor = colors[correctGuesses] || "lightgray";
+                el.classList.add("solved");
+                el.classList.remove("selected");
+                el.onclick = null;
+            });
+
+            correctGuesses++;
+            groups = groups.filter(group => group !== foundGroup);
+            selectedWords = [];
+
+            if (groups.length === 0) {
+                document.getElementById("message").textContent = "You won!";
+                gameOver = true;
+            }
+
+        } else {
+            attempts--;
+            document.getElementById("message").textContent =
+                "Try again! Attempts left: " + attempts;
+
+            selectedWords = [];
+
+            document.querySelectorAll(".selected").forEach(el => {
+                el.classList.remove("selected");
+            });
+
+            if (attempts === 0) {
+                document.getElementById("message").textContent = "Game over!";
+                gameOver = true;
+            }
+        }
+    }
+
+    function resetGame() {
+        loadPuzzle(currentPuzzleIndex);
+    }
+
+    function nextPuzzle() {
+        let nextIndex = currentPuzzleIndex + 1;
+
+        if (nextIndex >= puzzles.length) {
+            nextIndex = 0;
+        }
+
+        loadPuzzle(nextIndex);
+    }
     </script>
 </body>
 </html>
