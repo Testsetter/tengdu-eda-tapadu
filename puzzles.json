@@ -19,5 +19,26 @@
         "words": ["Kjallari", "Fátækur", "Sjálfstæður", "Blokk"]
       }
     ]
+  },
+  {
+    "name": "Puzzle 2",
+    "groups": [
+      {
+        "category": "Fjögur orð yfir sama fyribærið",
+        "words": ["Skjár", "Gluggi", "Ljóri", "Vindauga"]
+      },
+      {
+        "category": "Tískubóla, Unglingabóla, Hlaupabóla, Stóra bóla",
+        "words": ["Tíska", "Unglingur", "Hlaup", "Stór"]
+      },
+      {
+        "category": "Horfðu til himins, með höfuðið hátt",
+        "words": ["Horfa", "Himinn", "Höfuð", "Hár"]
+      },
+      {
+        "category": "Íslenskt sælgætisnammigott",
+        "words": ["Hraun", "Draumur", "Trítill", "Djúpur"]
+      }
+    ]
   }
 ]
