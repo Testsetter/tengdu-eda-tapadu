@@ -45,8 +45,8 @@
     "name": "Gáta 3",
     "groups": [
       {
-        "category": "Njálsgata, Bergþórugata, Njarðargata, Tjarnargata",
-        "words": ["NJÁLL", "BERGÞÓRA", "NJÖRÐUR", "TJÖRN"]
+        "category": "Íslenskar bókaútgáfur",
+        "words": ["EDDA", "UGLA", "IÐUNN", "SALKA"]
       },
       {
         "category": "Titlar á íslenskum kvikmyndum, ELDUR stendur fyrir myndina Eldarnir.",
@@ -82,5 +82,5 @@
         "words": ["ÁÁRSTÍÐ", "ÁTT", "HÖFUÐSKEPNA", "SPILASTOKKUR"]
       }
     ]
-  },
+  }
 ]
