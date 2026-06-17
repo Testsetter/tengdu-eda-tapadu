@@ -166,7 +166,9 @@
     let solutionText = "Ok Einstein, lausnirnar eru:\n\n";
 
     originalGroups.forEach(group => {
-        solutionText += group.category + ": " + group.words.join(", ") + "\n";
+        solutionText += group.category + "\n";
+        solutionText += group.words.join(", ");
+        solutionText += "\n\n";
     });
 
     document.getElementById("message").textContent = solutionText;
