@@ -11,11 +11,11 @@
         "words": ["HÖFN", "PÓSTHÚS", "KIRKJA", "SKÓLI"]
       },
       {
-        "category": "Bækur eftir Arnald Indriðason",
+        "category": "Bækur eftir Arnald Indriðason (MÝRI = Mýrin, RÖDD = Röddin, EINVÍGI = Einvígið).",
         "words": ["EINVÍGI", "RÖDD", "MÝRI", "FERÐALOK"]
       },
       {
-        "category": "Bókartitlar: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
+        "category": "Orðið + fólk = bókartitill: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
         "words": ["KJALLARI", "FÁTÆKUR", "SJÁLFSTÆÐUR", "BLOKK"]
       }
     ]
@@ -32,7 +32,7 @@
         "words": ["TÍSKA", "UNLINGUR", "HLAUP", "STÓR"]
       },
       {
-        "category": "Ný dönsk: Horfðu til himins, með höfuðið hátt.",
+        "category": "Horfðu til himins, með höfuðið hátt (Ný dönsk).",
         "words": ["HORFA", "HIMINN", "HÖFUÐ", "HÁR"]
       },
       {
@@ -70,7 +70,7 @@
         "words": ["BESTUR", "BÓNDI", "ALÞÝÐA", "BORGARI"]
       },
       {
-        "category": "Útvegsbankinn, Iðnaðarbankinn, Búnaðarbankinn, Íslandsbanki",
+        "category": "Útvegsbankinn, Iðnaðarbankinn, Búnaðarbankinn, Íslandsbanki.",
         "words": ["ÚTVEGUR", "IÐNAÐUR", "BÚNAÐUR", "ÍSLAND"]
       },
       {
