@@ -158,7 +158,19 @@
             });
 
             if (attempts === 0) {
-                document.getElementById("message").textContent = "Gengur betur næst!";
+                document.getElementById("message").textContent = "Gengur betur næst. Lausnirnar eru:";
+
+puzzle.groups.forEach(group => {
+  const div = document.createElement("div");
+  div.className = "solved-group";
+  div.innerHTML = `
+    <strong>${group.category}</strong><br>
+    ${group.words.join(", ")}
+  `;
+  document.getElementById("solvedGroups").appendChild(div);
+});
+
+document.getElementById("nextButton").style.display = "block";
                 gameOver = true;
             }
         }
