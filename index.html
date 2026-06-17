@@ -40,8 +40,8 @@
     <div class="grid" id="wordGrid"></div>
     <p id="message"></p>
     <button onclick="resetGame()">Byrja upp á nýtt</button>
-    <button onclick="nextPuzzle()">Næsta gáta</button>
-
+    <button id="nextButton" onclick="nextPuzzle()" style="display:none;">
+    Næsta gáta</button>
     <script>
         let puzzles = [];
     let currentPuzzleIndex = 0;
