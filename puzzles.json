@@ -15,7 +15,7 @@
         "words": ["EINVÍGI", "RÖDD", "MÝRI", "FERÐALOK"]
       },
       {
-        "category": "Orðin mynda bókartitla með orðinu FÓLK: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
+        "category": "Bbókartitlar: Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
         "words": ["KJALLARI", "FÁTÆKUR", "SJÁLFSTÆÐUR", "BLOKK"]
       }
     ]
@@ -36,7 +36,7 @@
         "words": ["HORFA", "HIMINN", "HÖFUÐ", "HÁR"]
       },
       {
-        "category": "Íslenskt sælgæti.",
+        "category": "Íslenskt sælgæti, (TRÍTILL = Trítlar).",
         "words": ["HRAUN", "DRAUMUR", "TRÍTILL", "DJÚPUR"]
       }
     ]
@@ -49,7 +49,7 @@
         "words": ["EDDA", "UGLA", "IÐUNN", "SALKA"]
       },
       {
-        "category": "Titlar á íslenskum kvikmyndum, ELDUR stendur fyrir myndina Eldarnir.",
+        "category": "Titlar á íslenskum kvikmyndum, (ELDUR = Eldarnir).",
         "words": ["BRIM", "SKJÁLFTI", "BÖRN", "ELDUR"]
       },
       {
@@ -66,7 +66,7 @@
     "name": "Gáta 4",
     "groups": [
       {
-        "category": "Stjórnmálaflokkar: Besti flokkurinn, Bændaflokkurinn, Alþýðuflokkurinn, Borgaraflokkurinn",
+        "category": "Stjórnmálaflokkar sem allir sakna: Besti flokkurinn, Bændaflokkurinn, Alþýðuflokkurinn, Borgaraflokkurinn",
         "words": ["BESTUR", "BÓNDI", "ALÞÝÐA", "BORGARI"]
       },
       {
@@ -79,7 +79,7 @@
       },
       {
         "category": "4 árstíðir, 4 höfuðskepnur, 4 áttir, 4 litir í spilastokk.",
-        "words": ["ÁÁRSTÍÐ", "ÁTT", "HÖFUÐSKEPNA", "SPILASTOKKUR"]
+        "words": ["ÁRSTÍÐ", "ÁTT", "HÖFUÐSKEPNA", "SPILASTOKKUR"]
       }
     ]
   }
