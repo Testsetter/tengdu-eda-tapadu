@@ -127,7 +127,7 @@
 
         if (foundGroup) {
             document.getElementById("message").textContent =
-            "Vel gert! " + foundGroup.category;
+            foundGroup.category;
 
             document.querySelectorAll(".selected").forEach(el => {
                 el.style.backgroundColor = colors[correctGuesses] || "lightgray";
@@ -141,7 +141,7 @@
             selectedWords = [];
 
             if (groups.length === 0) {
-                document.getElementById("message").textContent = "Sko þig!" + foundGroup.category;
+                document.getElementById("message").textContent = foundGroup.category;
                 gameOver = true;
                 document.getElementById("nextButton").style.display = "inline-block";
             }
@@ -158,7 +158,7 @@
             });
 
             if (attempts === 0) {
-                document.getElementById("message").textContent = "Gengur betur næst (vonandi)!";
+                document.getElementById("message").textContent = "Gengur betur næst!";
                 gameOver = true;
             }
         }
