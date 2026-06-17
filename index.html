@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    #message {
+        white-space: pre-line;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -158,20 +163,15 @@
             });
 
             if (attempts === 0) {
-                document.getElementById("message").textContent = "Ok Einstein, lausnirnar eru:";
+    let solutionText = "Ok Einstein, lausnirnar eru:\n\n";
 
-puzzle.groups.forEach(group => {
-  const div = document.createElement("div");
-  div.className = "solved-group";
-  div.innerHTML = `
-    <strong>${group.category}</strong><br>
-    ${group.words.join(", ")}
-  `;
-  document.getElementById("solvedGroups").appendChild(div);
-});
+    originalGroups.forEach(group => {
+        solutionText += group.category + ": " + group.words.join(", ") + "\n";
+    });
 
-document.getElementById("nextButton").style.display = "block";
-                gameOver = true;
+    document.getElementById("message").textContent = solutionText;
+
+    gameOver = true;
             }
         }
     }
