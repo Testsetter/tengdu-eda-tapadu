@@ -1,69 +1,69 @@
 [
   {
-    "name": "Gáta 1",
+    "name": "Spreyttu þig nú Einstein:",
     "groups": [
       {
         "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
         "words": ["FRAKKI", "SPÍTALI", "LOKI", "KÁRI"]
       },
       {
-        "category": "Hafnarstræti, Pósthússtræti, Kirkjustræti, Skólastræti",
-        "words": ["HÖFN", "PÓSTHÚS", "KIRKJA", "SKÓLI"]
+        "category": "Veitingastaðir",
+        "words": ["KOPAR", "SATT", "KRYDD", "MESSINN"]
       },
       {
-        "category": "Bækur eftir Arnald Indriðason (MÝRI = Mýrin, RÖDD = Röddin, EINVÍGI = Einvígið).",
-        "words": ["EINVÍGI", "RÖDD", "MÝRI", "FERÐALOK"]
+        "category": "Bækur eftir Yrsu Sigurðardóttur",
+        "words": ["LYGI", "KULDI", "ASKA", "ÞÖGN"]
       },
       {
-        "category": "Sjálfstætt fólk, Fátækt fólk, Fólkið í blokkinni, Fólkið í kjallaranum.",
-        "words": ["KJALLARI", "FÁTÆKUR", "SJÁLFSTÆÐUR", "BLOKK"]
+        "category": "Hlutar á skipi",
+        "words": ["LEST", "REIÐI", "HNÝSA", "STEFNIR"]
       }
     ]
   },
   {
-    "name": "Gáta 2",
+    "name": "Lát vaða:",
     "groups": [
       {
-        "category": "Samheiti fyrir glugga.",
-        "words": ["SKJÁR", "GLUGGI", "LJÓRI", "VINDAUGA"]
+        "category": "Titlar á íslenskum kvikmyndum, (ELDUR = Eldarnir)",
+        "words": ["BRIM", "SKJÁLFTI", "BLÓÐBÖND", "ELDUR"]
       },
       {
         "category": "Tískubóla, Unglingabóla, Hlaupabóla, Stóra bóla",
         "words": ["TÍSKA", "UNLINGUR", "HLAUP", "STÓR"]
       },
       {
-        "category": "Horfðu til himins, með höfuðið hátt (Ný dönsk).",
-        "words": ["HORFA", "HIMINN", "HÖFUÐ", "HÁR"]
+        "category": "Kindur bera, hryssur kasta, tíkur gjóta, urtur kæpa",
+        "words": ["BERA", "KASTA", "GJÓTA", "KÆPA"]
       },
       {
-        "category": "Íslenskt sælgæti, (TRÍTILL = Trítlar).",
-        "words": ["HRAUN", "DRAUMUR", "TRÍTILL", "DJÚPUR"]
+        "category": "Íslenskt sælgæti",
+        "words": ["HRAUN", "DRAUMUR", "STAUR", "DJÚPUR"]
       }
     ]
   },
   {
-    "name": "Gáta 3",
+    "name": "Vitið þér enn eða hvað?",
     "groups": [
       {
         "category": "Íslenskar bókaútgáfur",
         "words": ["EDDA", "UGLA", "IÐUNN", "SALKA"]
       },
       {
-        "category": "Titlar á íslenskum kvikmyndum, (ELDUR = Eldarnir).",
-        "words": ["BRIM", "SKJÁLFTI", "BÖRN", "ELDUR"]
+        "category": "Kirkjuklukka, brunnklukka, eldhúsklukka, Íslandsklukkan",
+        "words": ["KIRKJA", "BRUNNUR", "ELDHÚS", "ÍSLAND"]
       },
       {
         "category": "Sælgætisgerðir.",
         "words": ["MÓNA", "LINDA", "FREYJA", "NÓI"]
       },
       {
-        "category": "Þórskaffi, Kaffi Sólon, Kaffitár, Múlakaffi.",
-        "words": ["ÞÓR", "SÓLON", "TÁR", "MÚLI"]
+        "category": "Íslenskir ostar",
+        "words": ["AUÐUR", "GRETTIR", "LJÓTUR", "GULL"]
       }
     ]
   },
   {
-    "name": "Gáta 4",
+    "name": "Lengi skal manninn reyna:",
     "groups": [
       {
         "category": "Stjórnmálaflokkar sem allir sakna: Besti flokkurinn, Bændaflokkurinn, Alþýðuflokkurinn, Borgaraflokkurinn",
@@ -74,12 +74,12 @@
         "words": ["ÚTVEGUR", "IÐNAÐUR", "BÚNAÐUR", "ÍSLAND"]
       },
       {
-        "category": "Nýir vendir sópa best.",
-        "words": ["NÝR", "VÖNDUR", "SÓPAR", "BESTUR"]
+        "category": "Þolinmæði þrautir vinnur allar",
+        "words": ["ÞOLINMÆÐI", "ÞRAUT", "VINNA", "ALLIR"]
       },
       {
-        "category": "4 árstíðir, 4 höfuðskepnur, 4 áttir, 4 litir í spilastokk.",
-        "words": ["ÁRSTÍÐ", "ÁTT", "HÖFUÐSKEPNA", "SPILASTOKKUR"]
+        "category": "Hafnarstræti, Bankastræti, Vonarstræti, Skólastræti.",
+        "words": ["HÖFN", "BANKI", "VON", "SKÓLI"]
       }
     ]
   }
