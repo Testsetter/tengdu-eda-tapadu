@@ -66,12 +66,12 @@
     "name": "Gáta 3",
     "groups": [
       {
-        "category": "Stjórnmálaflokkar sem allir sakna: Besti flokkurinn, Bændaflokkurinn, Alþýðuflokkurinn, Borgaraflokkurinn",
-        "words": ["BESTUR", "BÓNDI", "ALÞÝÐA", "BORGARI"]
+        "category": "Stjórnmálaflokkar sem allir sakna: Besti flokkurinn, Bændaflokkurinn, Flokkur heimilanna, Borgaraflokkurinn",
+        "words": ["BESTUR", "BÓNDI", "HEIMILI", "BORGARI"]
       },
       {
-        "category": "Útvegsbankinn, Iðnaðarbankinn, Búnaðarbankinn, Íslandsbanki.",
-        "words": ["ÚTVEGUR", "IÐNAÐUR", "BÚNAÐUR", "ÍSLAND"]
+        "category": "Útvegsbankinn, Iðnaðarbankinn, Búnaðarbankinn, Alþýðubankinn",
+        "words": ["ÚTVEGUR", "IÐNAÐUR", "BÚNAÐUR", "ALÞÝÐA"]
       },
       {
         "category": "Þolinmæði þrautir vinnur allar",
