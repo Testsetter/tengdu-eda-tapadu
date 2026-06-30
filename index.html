@@ -165,15 +165,44 @@
             }
 
         } else {
-            attempts--;
-            document.getElementById("message").textContent =
-                "Reyndu aftur! Þú átt: " + attempts + " tilraunir eftir";
+    attempts--;
 
-            selectedWords = [];
+    let messages;
 
-            document.querySelectorAll(".selected").forEach(el => {
-                el.classList.remove("selected");
-            });
+    if (attempts >= 6) {
+        messages = [
+            "Ekkert mál, þú átt ",
+            "Ekki alveg. En ok, þú átt ",
+            "Fall er fararheill. Þú átt ",
+            "Engar áhyggjur, þú átt "
+        ];
+    } else if (attempts >= 3) {
+        messages = [
+            "Ok Einstein, þú átt ",
+            "Þú verður að gera betur en þetta. Þú átt ",
+            "Haltu ótrauð/ur áfram, þú átt ",
+            "Þú getur þetta! Þú átt "
+        ];
+    } else {
+        messages = [
+            "Reyndu betur, og það frekar fyrr en seinna, því þú átt bara ",
+            "Síðasti séns að snúa leiknum þér í vil, þú átt bara  ",
+            "Ekki panikka! Þú átt enn ",
+            "Nú verður þú að skora. Þú átt "
+        ];
+    }
+
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+    document.getElementById("message").textContent =
+        randomMessage + attempts + " tilraunir eftir.";
+
+    selectedWords = [];
+
+    document.querySelectorAll(".selected").forEach(el => {
+        el.classList.remove("selected");
+    });
+}
 
             if (attempts === 0) {
     let solutionText = "Ok Einstein, lausnirnar eru:\n\n";
@@ -200,7 +229,7 @@
     if (currentPuzzleIndex === 0) {
         button.textContent = "Spila eldri gátur";
     } else {
-        button.textContent = "Næsta eldri gáta";
+        button.textContent = "Næsta gáta";
     }
 
     button.style.display = "inline-block";
