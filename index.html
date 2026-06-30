@@ -144,7 +144,7 @@
             if (groups.length === 0) {
                 document.getElementById("message").textContent = foundGroup.category;
                 gameOver = true;
-                document.getElementById("nextButton").style.display = "inline-block";
+                showNextButton();
             }
 
         } else {
@@ -168,7 +168,7 @@
     });
 
     document.getElementById("message").textContent = solutionText;
-                document.getElementById("nextButton").style.display = "inline-block";
+                showNextButton();
 
     gameOver = true;
             }
@@ -178,16 +178,29 @@
     function resetGame() {
         loadPuzzle(currentPuzzleIndex);
     }
+    function showNextButton() {
+    const button = document.getElementById("nextButton");
 
-    function nextPuzzle() {
-        let nextIndex = currentPuzzleIndex + 1;
-
-        if (nextIndex >= puzzles.length) {
-            nextIndex = 0;
-        }
-
-        loadPuzzle(nextIndex);
+    if (currentPuzzleIndex === 0) {
+        button.textContent = "Spila eldri gátur";
+    } else {
+        button.textContent = "Næsta eldri gáta";
     }
+
+    button.style.display = "inline-block";
+}
+    function nextPuzzle() {
+    let nextIndex = currentPuzzleIndex + 1;
+
+    if (nextIndex >= puzzles.length) {
+        document.getElementById("message").textContent =
+            "Þú hefur spilað allar eldri gáturnar.";
+        document.getElementById("nextButton").style.display = "none";
+        return;
+    }
+
+    loadPuzzle(nextIndex);
+}
     </script>
 </body>
 </html>
