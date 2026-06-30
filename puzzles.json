@@ -3,21 +3,22 @@
     "name": "Gáta dagsins",
     "groups": [
       {
-        "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
-        "words": ["FRAKKI", "SPÍTALI", "LOKI", "KÁRI"]
+        "category": "Saumspor, -aðferðir",
+        "words": ["HARÐANGUR", "KROSS", "VARPLEGGUR", "KLAUSTUR"]
       },
       {
-        "category": "Veitingastaðir",
-        "words": ["KOPAR", "SATT", "KRYDD", "MESSINN"]
+        "category": "Domino's matseðillinn klikkar ekki",
+        "words": ["KJÖTVEISLA", "DÓTTIR", "HVÍTLAUKUR.IS", "PRINSESSAN"]
       },
       {
-        "category": "Bækur eftir Yrsu Sigurðardóttur",
-        "words": ["LYGI", "KULDI", "ASKA", "ÞÖGN"]
+        "category": "Klukkuprjón, perluprjón, sléttar lykkjur og brugðnar",
+        "words": ["KLUKKA", "PERLA", "SLÉTTUR", "BRUGÐINN"]
       },
       {
-        "category": "Hlutar á skipi",
-        "words": ["LEST", "REIÐI", "HNÝSA", "STEFNIR"]
+        "category": "Tíminn læknar öll sár",
+        "words": ["TÍMI", "LÆKNA", "ALLIR", "SÁR"]
       }
+      
     ]
   },
   {
@@ -80,6 +81,27 @@
       {
         "category": "Hafnarstræti, Bankastræti, Vonarstræti, Skólastræti",
         "words": ["HÖFN", "BANKI", "VON", "SKÓLI"]
+      }
+    ]
+  },
+  {
+    "name": "Gáta 4",
+    "groups": [
+      {
+        "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
+        "words": ["FRAKKI", "SPÍTALI", "LOKI", "KÁRI"]
+      },
+      {
+        "category": "Veitingastaðir",
+        "words": ["KOPAR", "SATT", "KRYDD", "MESSINN"]
+      },
+      {
+        "category": "Bækur eftir Yrsu Sigurðardóttur",
+        "words": ["LYGI", "KULDI", "ASKA", "ÞÖGN"]
+      },
+      {
+        "category": "Hlutar á skipi",
+        "words": ["LEST", "REIÐI", "HNÝSA", "STEFNIR"]
       }
     ]
   }
