@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TENGDU EÐA TAPAÐU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             body {
             font-family: "Trebuchet MS", Arial, sans-serif;
         }
             text-align: center;
+            margin: 20px;
         }
         .grid {
             display: grid;
@@ -20,11 +22,12 @@
             margin: auto;
         }
         .word {
-            padding: 10px;
+            padding: 14px 8px;
             background-color: lightgray;
+            border-radius: 8px;
             cursor: pointer;
-            border-radius: 5px;
-            font-size: 18px;
+            font-size: clamp(12px, 3vw, 18px);
+            word-break: break-word;
         }
         h2 {
             font-size: 32px;
@@ -51,6 +54,11 @@
             cursor: pointer;
             margin-bottom: 10px;
             font-size: 18px;
+        }
+        #game {
+            max-width: 500px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
