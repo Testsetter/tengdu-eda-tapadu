@@ -3,22 +3,42 @@
     "name": "Gáta dagsins",
     "groups": [
       {
-        "category": "Saumspor, -aðferðir",
-        "words": ["HARÐANGUR", "KROSS", "VARPLEGGUR", "KLAUSTUR"]
+      "category": "Lykilorð í titlum Tinnabóka",
+      "words": ["EINHYRNINGUR", "FJÁRSJÓÐUR", "VELDISSPROTI", "MÁNAFJÖLL"]
+    },
+    {
+      "category": "Samheiti yfir vind",
+      "words": ["ÚTRÆNA", "SVELJANDI", "ÞYR", "STRENGUR"]
+    },
+    {
+      "category": "Dvergar í norrænni goðafræði",
+      "words": ["ANDVARI", "FÍLI", "DÁINN", "ÞORINN"]
+    },
+    {
+      "category": "Samheiti yfir lykt",
+      "words": ["DES", "BRÝLA", "FNYKUR", "DAUNN"]
+    }      
+    ]
+  },
+  {
+    "name": "Bónusgáta dagsins",
+    "groups": [
+      {
+        "category": "Pönnukaka, möndlukaka, skúffukaka, piparkaka)",
+        "words": ["PANNA", "MANDLA", "SKÚFFA", "PIPAR"]
       },
       {
-        "category": "Domino's matseðillinn klikkar ekki",
-        "words": ["KJÖTVEISLA", "DÓTTIR", "HVÍTLAUKUR.IS", "PRINSESSAN"]
+        "category": "Stangveiðimenn vaða, kasta og draga. Sumir landa líka.",
+        "words": ["VAÐA", "KASTA", "DRAGA", "LANDA"]
       },
       {
-        "category": "Klukkuprjón, perluprjón, sléttar lykkjur og brugðnar",
-        "words": ["KLUKKA", "PERLA", "SLÉTTUR", "BRUGÐINN"]
+        "category": "Árstíðirnar eru fjórar, eins er farið um áttirnar, guðspjöllin og höfuðskepnurnar",
+        "words": ["ÁRSTÍÐ", "ÁTT", "GUÐSPJALL", "HÖFUÐSKEPNA"]
       },
       {
-        "category": "Tíminn læknar öll sár",
-        "words": ["TÍMI", "LÆKNA", "ALLIR", "SÁR"]
+        "category": "Þættir á RÚV (Kilj-an, Torg-ið)",
+        "words": ["KILJA", "TORG", "VEÐUR", "KVEIKUR"]
       }
-      
     ]
   },
   {
@@ -104,5 +124,26 @@
         "words": ["LEST", "REIÐI", "HNÝSA", "STEFNIR"]
       }
     ]
-  }
+  },
+  {
+  "name": "Gáta 5",
+  "groups": [
+    {
+      "category": "Saumspor, -aðferðir",
+      "words": ["HARÐANGUR", "KROSS", "VARPLEGGUR", "KLAUSTUR"]
+    },
+    {
+      "category": "Domino's matseðillinn klikkar ekki",
+      "words": ["KJÖTVEISLA", "DÓTTIR", "HVÍTLAUKUR.IS", "PRINSESSAN"]
+    },
+    {
+      "category": "Klukkuprjón, perluprjón, sléttar lykkjur og brugðnar",
+      "words": ["KLUKKA", "PERLA", "SLÉTTUR", "BRUGÐINN"]
+    },
+    {
+      "category": "Tíminn læknar öll sár",
+      "words": ["TÍMI", "LÆKNA", "ALLIR", "SÁR"]
+    }
+  ]
+}
 ]
