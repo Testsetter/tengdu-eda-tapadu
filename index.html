@@ -66,6 +66,26 @@
             font-size: 18px;
             border-radius: 8px;
         }
+        #solvedGroups {
+            max-width: 400px;
+            margin: 0 auto 10px auto;
+        }
+
+.solved-group {
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.solved-category {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.solved-words {
+    font-size: 16px;
+}
     </style>
 </head>
 <body>
@@ -88,6 +108,7 @@
         Lýsingarorð eru í karlkyni, nefnifalli, frumstigi<br>
     </p>
 </details>
+    <div id="solvedGroups"></div>
     <div class="grid" id="wordGrid"></div>
     <p id="message"></p>
     <!-- <button onclick="resetGame()">Byrja upp á nýtt</button> -->
@@ -135,6 +156,7 @@
 
         document.querySelector("h2").textContent = puzzles[index].name;
         document.getElementById("message").textContent = "";
+        document.getElementById("solvedGroups").innerHTML = "";
         createGrid();
     }
 
@@ -177,14 +199,21 @@
         );
 
         if (foundGroup) {
-            document.getElementById("message").textContent =
-            foundGroup.category;
+            let solvedBox = document.createElement("div");
+            solvedBox.className = "solved-group";
+            solvedBox.style.backgroundColor = colors[correctGuesses] || "lightgray";
+
+            solvedBox.innerHTML =
+            '<div class="solved-category">' + foundGroup.category + '</div>' +
+            '<div class="solved-words">' + foundGroup.words.join(" · ") + '</div>';
+
+            document.getElementById("solvedGroups").appendChild(solvedBox);
 
             document.querySelectorAll(".selected").forEach(el => {
-                el.style.backgroundColor = colors[correctGuesses] || "lightgray";
-                el.classList.add("solved");
-                el.classList.remove("selected");
-                el.onclick = null;
+            el.remove();
+        });
+
+            document.getElementById("message").textContent = "";
             });
 
             correctGuesses++;
