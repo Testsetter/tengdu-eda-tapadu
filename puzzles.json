@@ -1,6 +1,27 @@
 [
   {
-    "name": "Gáta dagsins",
+    "name": "Gáta dagsins, fersk og spræk",
+    "groups": [
+      {
+      "category": "Lukku-Láka bækur: Sjakalinn, Draugabærinn, Póstvagninn, Grænjaxlinn",
+      "words": ["SJAKALI", "DRAUGABÆR", "PÓSTVAGN", "GRÆNJAXL"]
+    },
+    {
+      "category": "Á peningaseðlum",
+      "words": ["MÁLMÞYNNA", "ÖRYGGISÞRÁÐUR", "BLINDRAMERKI", "VATNSMERKI"]
+    },
+    {
+      "category": "Samheiti yfir snjókomu",
+      "words": ["FANNSPÝJA", "KLESSINGUR", "DRÍFA", "HRAGLANDI"]
+    },
+    {
+      "category": "Saltfiskur, harðfiskur, fjörfiskur, flugfiskur",
+      "words": ["SALT", "HARÐUR", "FJÖR", "FLUG"]
+    }      
+    ]
+  },
+  {
+    "name": "Gáta 6",
     "groups": [
       {
       "category": "Lykilorð í titlum Tinnabóka",
@@ -21,7 +42,7 @@
     ]
   },
   {
-    "name": "Bónusgáta dagsins",
+    "name": "Gáta 7",
     "groups": [
       {
         "category": "Pönnukaka, möndlukaka, skúffukaka, piparkaka)",
