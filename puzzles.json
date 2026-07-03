@@ -1,5 +1,26 @@
 [
   {
+    "name": "Gáta dagsins hefur litið dagsins ljós",
+    "groups": [
+      {
+      "category": "Silfurberg, silfurskotta, silfurskeið, silfurmáfur",
+      "words": ["BERG", "SKOTTA", "SKEIÐ", "MÁFUR"]
+    },
+    {
+      "category": "Samheiti yfir hest",
+      "words": ["DRÖSULL", "KAPALL", "GANDUR", "GANGVARI"]
+    },
+    {
+      "category": "Leikrit eftir Jökul Jakobsson",
+      "words": ["KNALL", "KERTALOG", "KERAMIK", "DÓMÍNÓ"]
+    },
+    {
+      "category": "Landvættir Íslands",
+      "words": ["GRIÐUNGUR", "GAMMUR", "DREKI", "BERGRISI"]
+    }      
+    ]
+  },
+  {
     "name": "Gáta dagsins, fersk og spræk",
     "groups": [
       {
