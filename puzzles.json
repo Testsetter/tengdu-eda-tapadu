@@ -1,6 +1,27 @@
 [
   {
-    "name": "Gáta dagsins hefur litið dagsins ljós",
+    "name": "Laugardagur til lausnar",
+    "groups": [
+      {
+      "category": "Ísjaki, Ísland, íssósa, ísbúð",
+      "words": ["JAKI", "LAND", "SÓSA", "BÚÐ"]
+    },
+    {
+      "category": "Varaþurrkur, varalitur, varalestur, varamaður",
+      "words": ["ÞURRKUR", "LITUR", "LESTUR", "MAÐUR"]
+    },
+    {
+      "category": "Heimsókn, Kirkjusókn, Málsókn, Framsókn",
+      "words": ["HEIM", "KIRKJA", "MÁL", "FRAM"]
+    },
+    {
+      "category": "Framhald, Framsókn, framherji, fram hjá",
+      "words": ["HALD", "SÓKN", "HERJI", "HJÁ"]
+    }      
+    ]
+  },
+  {
+    "name": "Gáta gærdagsins",
     "groups": [
       {
       "category": "Silfurberg, silfurskotta, silfurskeið, silfurmáfur",
@@ -21,7 +42,7 @@
     ]
   },
   {
-    "name": "Gáta gærdagsins",
+    "name": "Gáta gærdagsins í gær",
     "groups": [
       {
       "category": "Á svissneskum vasahníf",
