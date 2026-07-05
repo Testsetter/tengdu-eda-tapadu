@@ -1,6 +1,27 @@
 [
   {
-    "name": "Laugardagur til lausnar",
+    "name": "Ný gáta hefur litið dagsins fagra ljós",
+    "groups": [
+      {
+      "category": "Skriðsóley, mýrarsóley, holtasóley, brennisóley",
+      "words": ["SKRÍÐA", "MÝRI", "HOLT", "BRENNA"]
+    },
+    {
+      "category": "Fernudrykkir sem forðum trylltu lýðinn",
+      "words": ["GARPUR", "FRISSI", "GOSI", "JÓGI"]
+    },
+    {
+      "category": "Háskólabyggingar, aka Musteri andans",
+        "words": ["ODDI", "VERÖLD", "LÖGBERG", "GIMLI"]
+    },
+    {
+      "category": "Fjöll",
+      "words": ["ÖXI", "HORN", "STRÚTUR", "GLÁMA"]
+    }      
+    ]
+  },
+  {
+    "name": "Laugardagsgátan",
     "groups": [
       {
       "category": "Ísjaki, Ísland, íssósa, ísbúð",
@@ -21,7 +42,7 @@
     ]
   },
   {
-    "name": "Gáta gærdagsins",
+    "name": "Gáta dagsins um daginn",
     "groups": [
       {
       "category": "Silfurberg, silfurskotta, silfurskeið, silfurmáfur",
@@ -42,7 +63,7 @@
     ]
   },
   {
-    "name": "Gáta gærdagsins í gær",
+    "name": "Gáta gærdags liðins dags",
     "groups": [
       {
       "category": "Á svissneskum vasahníf",
