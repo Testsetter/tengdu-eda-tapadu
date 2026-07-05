@@ -84,7 +84,7 @@
     ]
   },
   {
-    "name": "Gáta gærdags liðins dags",
+    "name": "Gáta liðins dags",
     "groups": [
       {
       "category": "Á svissneskum vasahníf",
@@ -105,7 +105,7 @@
     ]
   },
   {
-    "name": "Gáta 6",
+    "name": "Gáta: Einhyrningur",
     "groups": [
       {
       "category": "Lykilorð í titlum Tinnabóka",
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "name": "Gáta 7",
+    "name": "Pönnu- og pipargátan",
     "groups": [
       {
         "category": "Pönnukaka, möndlukaka, skúffukaka, piparkaka",
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "name": "Gáta 1",
+    "name": "Hin fyrsta gáta",
     "groups": [
       {
         "category": "Titlar á íslenskum kvikmyndum, (ELDUR = Eldarnir)",
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "name": "Gáta 2",
+    "name": "Eddu- og Uglugátan",
     "groups": [
       {
         "category": "Íslenskar bókaútgáfur",
@@ -189,7 +189,7 @@
     ]
   },
   {
-    "name": "Gáta 3",
+    "name": "Alþýðugátan",
     "groups": [
       {
         "category": "Stjórnmálaflokkar sem allir sakna: Besti flokkurinn, Bændaflokkurinn, Flokkur heimilanna, Borgaraflokkurinn",
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "name": "Gáta 4",
+    "name": "Kalda lygagátan",
     "groups": [
       {
         "category": "Frakkarstígur, Spítalastígur, Lokastígur, Kárastígur",
