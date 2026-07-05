@@ -87,6 +87,20 @@
             font-size: 16px;
             font-weight: normal;
         }
+        #archiveList {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+
+        #archiveList a {
+            color: #0066cc;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #archiveList a:hover {
+        color: #003366;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +130,7 @@
     <button id="nextButton" onclick="nextPuzzle()" style="display:none;">
     Næsta gáta</button>
     <hr>
-        <h3>Eldri gátur</h3>
+        <h3>Aðrar gátur</h3>
         <div id="archiveList"></div>
     <script>
         let puzzles = [];
@@ -293,7 +307,7 @@
     const button = document.getElementById("nextButton");
 
     if (currentPuzzleIndex === 0) {
-        button.textContent = "Spila eldri gátur";
+        button.textContent = "Spila fleiri gátur";
     } else {
         button.textContent = "Næsta gáta";
     }
@@ -305,10 +319,17 @@
     archiveList.innerHTML = "";
 
     for (let i = 1; i < puzzles.length; i++) {
-        const button = document.createElement("button");
-        button.textContent = puzzles[i].name;
-        button.onclick = () => loadPuzzle(i);
-        archiveList.appendChild(button);
+        const link = document.createElement("a");
+        link.href = "#";
+        link.textContent = puzzles[i].name;
+
+        link.onclick = function(e) {
+        e.preventDefault();
+        loadPuzzle(i);
+    };
+
+archiveList.appendChild(link);
+archiveList.appendChild(document.createElement("br"));
     }
     }
     function nextPuzzle() {
@@ -316,7 +337,7 @@
 
     if (nextIndex >= puzzles.length) {
         document.getElementById("message").textContent =
-            "Þú hefur spilað allar eldri gáturnar.";
+            "Þú hefur spilað allar gáturnar.";
         document.getElementById("nextButton").style.display = "none";
         return;
     }
