@@ -115,6 +115,9 @@
     <!-- <button onclick="resetGame()">Byrja upp á nýtt</button> -->
     <button id="nextButton" onclick="nextPuzzle()" style="display:none;">
     Næsta gáta</button>
+    <hr>
+        <h3>Eldri gátur</h3>
+        <div id="archiveList"></div>
     <script>
         let puzzles = [];
     let currentPuzzleIndex = 0;
@@ -137,6 +140,7 @@
     .then(data => {
         puzzles = data;
         loadPuzzle(0);
+        createArchiveList();
     })
     .catch(error => {
         document.getElementById("message").textContent = error.message;
@@ -295,7 +299,18 @@
     }
 
     button.style.display = "inline-block";
-}
+    }
+    function createArchiveList() {
+    const archiveList = document.getElementById("archiveList");
+    archiveList.innerHTML = "";
+
+    for (let i = 1; i < puzzles.length; i++) {
+        const button = document.createElement("button");
+        button.textContent = puzzles[i].name;
+        button.onclick = () => loadPuzzle(i);
+        archiveList.appendChild(button);
+    }
+    }
     function nextPuzzle() {
     let nextIndex = currentPuzzleIndex + 1;
 
@@ -307,7 +322,7 @@
     }
 
     loadPuzzle(nextIndex);
-}
+    }
     </script>
 </body>
 </html>
