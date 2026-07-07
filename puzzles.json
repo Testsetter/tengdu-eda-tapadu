@@ -1,6 +1,27 @@
 [
   {
-    "name": "Ný gáta hefur litið dagsins fagra ljós",
+    "name": "Ný gáta",
+    "groups": [
+      {
+      "category": "Silfurmáfur, hettumáfur, bjartmáfur, stormmáfur",
+      "words": ["SILFUR", "HETTA", "BJARTUR", "STORMUR"]
+    },
+    {
+      "category": "Hvalategundir sem sést hafa við landið, allt höfrungar",
+      "words": ["HNÝÐINGUR", "LEIFTUR", "LÉTTIR", "STÖKKULL"]
+    },
+    {
+      "category": "Nýir vendir sópa best",
+        "words": ["NÝR", "VÖNDUR", "SÓPA", "BESTUR"]
+    },
+    {
+      "category": "Íslenskur bjór",
+      "words": ["BIRTA", "GLETTA", "BOLI", "DYNJANDI"]
+    }      
+    ]
+  },
+  {
+    "name": "Brattagáta",
     "groups": [
       {
       "category": "Skriðsóley, mýrarsóley, holtasóley, brennisóley",
