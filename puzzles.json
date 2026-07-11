@@ -1,6 +1,27 @@
 [
   {
-    "name": "Ný gáta",
+    "name": "Gáta dagsins",
+    "groups": [
+      {
+      "category": "Nöfn úr íslenskri þýðingu Þorsteins Thorarensens á Lord of the Rings, (Eowyn, Sam, Strider (Aragorn stundum kallaður Strider), Merry",
+      "words": ["JÓVIN", "SÓMI", "STÍGUR", "KÁTUR"]
+    },
+    {
+      "category": "Íslensk nöfn á hvolpum í hinum geysivinsælu þáttum Hvolpasveit",
+      "words": ["KAPPI", "KÖGGUR", "SEIFUR", "BERSI"]
+    },
+    {
+      "category": "Íslenskir veitingastaðir",
+        "words": ["HOSILÓ", "HNOSS", "RÖKKUR", "BARI"]
+    },
+    {
+      "category": "Íslensk tré og runnar",
+      "words": ["MÝRASKUR, "HEGGUR", "BEYKIR", "VIÐJA"]
+    }      
+    ]
+  },
+  {
+    "name": "Silfurgátan",
     "groups": [
       {
       "category": "Silfurmáfur, hettumáfur, bjartmáfur, stormmáfur",
