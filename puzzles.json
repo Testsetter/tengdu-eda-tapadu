@@ -1,6 +1,27 @@
 [
   {
-    "name": "Spriklandi ný gáta",
+    "name": "Nýr dagur, ný gáta",
+    "groups": [
+      {
+      "category": "Fósturjörð, fósturbarn, fósturheimili, Fósturskóli Íslands (sem var og hét)",
+      "words": ["JÖRÐ", "BARN", "HEIMILI", "SKÓLI"]
+    },
+    {
+      "category": "Föðurland, föðurnafn, föðurarfur, föðurbetrungur",
+      "words": ["LAND", "NAFN", "ARFUR", "BETRUNGUR"]
+    },
+    {
+      "category": "Móðurmál, móðurmjólk, móðurmold, móðurlíf",
+        "words": ["MÁL", "MJÓLK", "MOLD", "LÍF"]
+    },
+    {
+      "category": "Lestrarhestur, lestrarátak (ægilega vinsælt), lestrarsalur, lestrarkver",
+      "words": ["HESTUR", "ÁTAK", "SALUR", "KVER"]
+    }      
+    ]
+  },
+  {
+    "name": "Afar íslensk gáta",
     "groups": [
       {
       "category": "Þorsteinn, Þorleifur, Þorbergur, Þorgeir",
