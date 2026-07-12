@@ -1,6 +1,27 @@
 [
   {
-    "name": "Gáta dagsins",
+    "name": "Spriklandi ný gáta",
+    "groups": [
+      {
+      "category": "Þorsteinn, Þorleifur, Þorbergur, Þorgeir",
+      "words": ["STEINN", "LEIFUR", "BERGUR", "GEIR"]
+    },
+    {
+      "category": "Kýr sem fyrir koma í þulunni sem hefst svona: Sól skín á fossa, segir hún Krossa / Hvar á að tjalda, segir hún Skjalda",
+      "words": ["FRIGGJA", "REYÐUR", "HÚFA", "KROSSA"]
+    },
+    {
+      "category": "Galdrastafir",
+        "words": ["HAGALL", "ANGURGAPI", "DREPRÚN", "HULINHJÁLMUR"]
+    },
+    {
+      "category": "Heiti tákna í rúnastafrófinu fúþark, ᚷ, ᛏ, ᚱ, ᚦ",
+      "words": ["GJÖF", "TÝR", "REIÐ", "ÞURS"]
+    }      
+    ]
+  },
+  {
+    "name": "Hosílo gátan",
     "groups": [
       {
       "category": "Nöfn úr íslenskri þýðingu Þorsteins Thorarensens á Lord of the Rings, (Ëomer, Sam, Strider (Aragorn stundum kallaður Strider), Merry",
