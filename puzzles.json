@@ -1,6 +1,27 @@
 [
   {
-    "name": "Nýr dagur, ný gáta",
+    "name": "Lauflétt gátugrey",
+    "groups": [
+      {
+      "category": "Byggðarsafn, bókasafn, listasafn, skjalasafn",
+      "words": ["BYGGÐ", "BÓK", "LIST", "SKJAL"]
+    },
+    {
+      "category": "Á eða í höfði",
+      "words": ["FLUGA", "VERKUR", "HATTUR", "LÚS"]
+    },
+    {
+      "category": "Geysivinsæl spil með klassískum spilastokki",
+        "words": ["KASÍNA", "MARÍAS", "KLEPPARI", "VEIÐIMAÐUR"]
+    },
+    {
+      "category": "Lakkrísrúlla, -reim, -rör, -konfekt",
+      "words": ["RÚLLA", "REIM", "RÖR", "KONFEKT"]
+    }      
+    ]
+  },
+  {
+    "name": "Kynslóðagátan",
     "groups": [
       {
       "category": "Fósturjörð, fósturbarn, fósturheimili, Fósturskóli Íslands (sem var og hét)",
