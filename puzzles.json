@@ -1,6 +1,27 @@
 [
   {
-    "name": "Lauflétt gátugrey",
+    "name": "Gátan sem allir hafa beðið eftir",
+    "groups": [
+      {
+      "category": "Þættir á Rás 1. Og eins og glöggur getur þá er það auðvitað Samfélag-ið og Spegill-inn",
+      "words": ["SUMARMÁL", "HEIMSKVIÐUR", "SAMFÉLAG", "SPEGILL"]
+    },
+    {
+      "category": "Íslenskar bíómyndir",
+      "words": ["VILLIBRÁÐ", "EINKALÍF", "SKAMMDEGI", "EINKALÍF"]
+    },
+    {
+      "category": "Stuðlaberg, móberg, setberg, silfurberg",
+        "words": ["STUÐULL", "MÓR", "SET", "SILFUR"]
+    },
+    {
+      "category": "Spil: Slönguspilið, Útvegsspilið, Partýspilið og Hættuspilið",
+      "words": ["SLANGA", "ÚTVEGUR", "PARTÝ", "HÆTTA"]
+    }      
+    ]
+  },
+  {
+    "name": "Gátugrey",
     "groups": [
       {
       "category": "Byggðarsafn, bókasafn, listasafn, skjalasafn",
